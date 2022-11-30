@@ -83,3 +83,8 @@
 #feedback-page{
     display: none;
 }
+.dilemma-name-buttons{
+    margin-left: 1vw;
+    margin-top: 1vw;    
+    background-color: aqua;
+}

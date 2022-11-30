@@ -16,6 +16,8 @@ api("api/get/findall/dilemma", "get").then(response=> {
 
     }
     
+    renderDilemmaList();
+
     return;
 });
 

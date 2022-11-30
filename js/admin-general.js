@@ -64,18 +64,45 @@ function renderFeedback() {
 
 function renderDilemmaList(){
     
-    
+    $('#dilemma-info').empty();
 
+    $('#dilemma-info').css("column-count", 3);
 
+    for(let i = 0; i < dilemmaList.length; i++){
 
-   
-    
+    let dilemmaNameLink = '<button class="dilemma-name-buttons" onclick="renderEditDilemmaForm('+ dilemmaList[i].id +')">'+ dilemmaList[i].daName + '</button>'
+
+    $('#dilemma-info').append(dilemmaNameLink);
+
+    }
 }
+
+
 
 function renderAddDilemma(){
 
 }
 
-function renderEditDilemmaForm(){
+function renderEditDilemmaForm(id){
     
+    let currentDilemma;
+
+    for(let i = 0; i < dilemmaList.length; i++){
+
+        if(dilemmaList[i].id === id){
+        currentDilemma = dilemmaList[i]; 
+        }
+    }
+
+
+    $('#dilemma-info').empty();
+
+    let dilemmaForm = '<div><form><label for="daName">Dansk navn</label> <input type="text" id="daName" value="' + currentDilemma.daName + '"><label for="enName">Engelsk navn</label> <input type="text" id="enName" value="'
+     + currentDilemma.enName +'"><label for="daDescription">Dansk dilemma tekst</label><input type="text" id="daDescription" value="' + currentDilemma.daDescription +
+      '"> <label for="enDescription">Engelsk dilemma tekst</label><input type="text" id="enDescription" value="' + currentDilemma.enDescription + '"> <input type="submit"></form></div>'
+
+     
+
+
+    $('#dilemma-info').append(dilemmaForm);
 }
