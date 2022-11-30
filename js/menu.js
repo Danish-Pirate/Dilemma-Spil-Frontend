@@ -63,23 +63,73 @@ function renderGameIntro() {
 }
 
 function renderGameRules() {
-    resetGameInfoDiv();
-    let gameRulesDiv = document.getElementById("game-rules");
-    let selectedButton = document.getElementById("game-rules-btn");
-    selectedButton.style.backgroundColor = "#eeb71f";
-    gameRulesDiv.style.display = "block"
+  resetGameInfoDiv();
+  let gameRulesDiv = document.getElementById("game-rules");
+  let selectedButton = document.getElementById("game-rules-btn");
+  selectedButton.style.backgroundColor = "#eeb71f";
+  gameRulesDiv.style.display = "block";
 }
 
 function resetGameInfoDiv() {
-    let gameIntroDiv = document.getElementById("game-intro");
-    let gameRulesDiv = document.getElementById("game-rules");
-    gameIntroDiv.style.display = "none";
-    gameRulesDiv.style.display = "none";
-    
-    let listOfBtns = document.getElementsByClassName("game-info-button");
-    Array.from(listOfBtns).forEach(item => {
-        item.style.backgroundColor = "white";
-      });
+  let gameIntroDiv = document.getElementById("game-intro");
+  let gameRulesDiv = document.getElementById("game-rules");
+  gameIntroDiv.style.display = "none";
+  gameRulesDiv.style.display = "none";
+
+  let listOfBtns = document.getElementsByClassName("game-info-button");
+  Array.from(listOfBtns).forEach((item) => {
+    item.style.backgroundColor = "white";
+  });
+}
+
+function renderLoginForm() {
+  resetPage();
+  resetMainDiv();
+  const mainDiv = document.getElementById("main-div");
+  let loginForm = document.createElement("div");
+  loginForm.className = "col-10 h-100 m-0";
+  loginForm.id = "login-page";
+  loginForm.innerHTML = `
+      <h2 class="d-inline">Admin Login</h2>
+      <div class="float-end language-div text-center">
+        <h5>Sprog</h5>
+        <img src="../images/denmark_flag.png" class="flag-icon" alt="">
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <img src="../images/uk_flag.png" class="flag-icon" alt="">
+      </div>
+      <form>
+        <fieldset>
+          <label for="username"></label>
+          <input type="text" id="username" name="username" placeholder="username">
+          <label for="password"></label>
+          <input type="password" id="password" name="password" placeholder="password">
+          <button type="button" onclick="submitLogin()")>Login</button>
+        </fieldset>
+      </form>
+    `;
+  mainDiv.appendChild(loginForm);
+}
+
+async function submitLogin() {
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+  const adminUser = {
+    username: username,
+    password: password
+  };
+  const token = await api("login", "POST", adminUser);
+  localStorage.setItem("token", token.jwttoken);
+}
+
+function resetMainDiv() {
+  let mainDiv = document.getElementById("login-page");
+  if (mainDiv == null) {
+    return;
+  }
+  mainDiv.remove();
 }
 
 function setColumnsOne(){
