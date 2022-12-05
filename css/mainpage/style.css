@@ -2,13 +2,23 @@
     --yellow: #eeb71f;
 }
 
+.w-33 {
+    width: 33%;
+}
+
 .bg-yellow {
     background-color: var(--yellow);
 }
 
 #game-info-div {
-    width: 500px;
-    height: 500px;
+    width: auto;
+    height: 30vw;
+}
+
+#feedback-div{
+    width: 60vw;
+    height: 30vw;
+
 }
 
 #game-info-div .game-desc {
@@ -34,9 +44,11 @@
 }
 
 .language-div {
+    margin-top: 1px;
+    margin-right: 1px;
     background-color: var(--yellow);
     padding: 0.25em;
-    margin-right: -0.50em;
+
 }
 
 .flag-icon {
@@ -104,4 +116,39 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+
+.dilemma-height{
+    height: 400px;
+
+}
+
+.giant-box{
+
+    margin: 0px;
+    column-count: 2;
+}
+
+.menu-box{
+    width: 20%;
+}
+
+.main-box-container{
+    margin-top: 6%;
+    margin-left: 22%;
+    width: 80%;
+    column-count: 2;
+}
+
+#game-page{
+    width: auto;
+}
+#lobby-page{
+    margin-left: 22%;
+    width: auto;
+}
+#feedback-page{
+    margin-left: 22%;
+    width: auto;
 }
