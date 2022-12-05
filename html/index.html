@@ -13,6 +13,7 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"
     defer></script>
   <script src="../js/menu.js" defer></script>
+  <script type="text/javascript" src="/js/utility/language.js" ></script>
 </head>
 
 <body>
@@ -40,7 +41,7 @@
         <h5>Sprog</h5>
         <img src="../images/denmark_flag.png" class="flag-icon" alt="">
         <label class="switch">
-          <input type="checkbox">
+          <input type="checkbox" id="togBtn">
           <span class="slider round"></span>
         </label>
         <img src="../images/uk_flag.png" class="flag-icon" alt="">
@@ -53,9 +54,9 @@
               onclick="renderGameRules()">Spilleregler</button></li>
         </ul>
         <div id="game-intro" class="game-desc p-2">
-          <p>intro ipsum dolor sit amet consectetur adipisicing elit. Deserunt quia ut illo accusantium praesentium
+          intro ipsum dolor sit amet consectetur adipisicing elit. Deserunt quia ut illo accusantium praesentium
             fugit labore cum. Recusandae at fugit, delectus necessitatibus aut officiis, voluptatum, ratione reiciendis
-            quas nostrum ullam.</p>
+            quas nostrum ullam.
         </div>
         <div id="game-rules" class="game-desc p-2">rules Lorem ipsum dolor sit, amet consectetur adipisicing elit.
           Nostrum fugit debitis ipsum quasi aperiam asperiores. Cumque maxime facilis est doloremque, atque eius qui
@@ -69,7 +70,7 @@
         <h5>Sprog</h5>
         <img src="../images/denmark_flag.png" class="flag-icon" alt="">
         <label class="switch">
-          <input type="checkbox">
+          <input type="checkbox" id="togBtn">
           <span class="slider round"></span>
         </label>
         <img src="../images/uk_flag.png" class="flag-icon" alt="">
@@ -89,13 +90,13 @@
         <h5>Sprog</h5>
         <img src="../images/denmark_flag.png" class="flag-icon" alt="">
         <label class="switch">
-          <input type="checkbox">
+          <input type="checkbox" id="togBtn">
           <span class="slider round"></span>
         </label>
         <img src="../images/uk_flag.png" class="flag-icon" alt="">
       </div>
       <button>Opret spil</button>
-      <button>Tilsut til lobby</button>
+      <button>Tilslut til lobby</button>
     </div>
   </div>
 </body>
