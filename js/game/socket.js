@@ -10,7 +10,7 @@ class Socket {
         }
 
         this.lobby = lobbyID
-        this.url = "https://lively-pond-0744c3603.2.azurestaticapps.net/game/" + this.lobby;
+        this.url = "https://dilemmaspiltest.azurewebsites.net/game/" + this.lobby;
         this.socket = new SockJS(this.url);
         this.stompClient = Stomp.over(this.socket);
 

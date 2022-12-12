@@ -1,5 +1,5 @@
 async function api(end_url, method, payload) {
-    const response = await fetch("https://lively-pond-0744c3603.2.azurestaticapps.net/" + end_url, {
+    const response = await fetch("https://dilemmaspiltest.azurewebsites.net/" + end_url, {
       headers: {
         "Content-Type": "application/json; charset=utf-8",
       },
