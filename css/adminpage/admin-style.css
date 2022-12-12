@@ -1,0 +1,149 @@
+.menu-box{
+    width: 12%;
+    background-color: rgb(236, 236, 247);
+}
+.list-group{
+    width: 50%;
+    margin-left: 5%;
+    
+}
+.list-group-item{
+    background-color: rgb(236, 236, 247);
+    border: none;
+    margin: 1vw;
+    margin-top: 2vw;
+}
+.menu-button{
+    display: flex;
+    justify-content: center;
+  width: 100%;
+  background-color: rgb(184, 218, 212);
+  border: none; /* 0px, solid, black; */
+  color: black;
+  padding: 1vw 3vw;
+  text-align: center;
+  text-decoration: none;  
+  font-size: auto;
+  border-radius: 47%;
+}
+.menu-button:hover{
+    background-color: beige;
+}
+.main-header{
+    margin-left: 13%;    
+}
+.main-box{
+    margin-left: 12%;
+}
+.content-box{
+    margin-top: 4vw;
+    margin-left: 3vw;
+    height: 100vw;
+    width: 80vw;    
+}
+#content-header{
+    background-color: white;
+    margin-left: 1vw;
+}
+.content-info{
+    clear: both;
+    height: 35vw;
+    width: 70vw;
+    background-color: rgb(184, 218, 212);
+    border-radius: 1%;
+}
+.content-buttons-div{
+    background-color: white;
+    
+}
+.content-button{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(240, 203, 240);
+    padding: 1vw;
+    padding-right: 2vw;
+    float: left;
+    border: none;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 8%;
+    margin: 0px;
+}
+.content-button:hover{
+    background-color: beige;
+}
+#dilemma-page{
+    display: none;
+}
+#package-page{
+    display: none;
+}
+#statistics-page{
+    display: none;
+}
+#feedback-page{
+    display: none;
+}
+.dilemma-name-buttons{
+    margin-left: 1vw;
+    margin-top: 1vw;    
+    background-color: rgb(217, 213, 230);
+}
+.package-name-buttons{
+    margin-left: 1vw;
+    margin-top: 1vw;    
+    background-color: aqua;
+}
+#dilemma-form{
+    margin: 1vw;
+    background-color: rgb(184, 218, 212);
+}
+#hints-form{
+    margin: 1vw;
+    background-color: rgb(184, 218, 212);
+}
+.pure-dilemma-description{
+    margin: 0.5vw;
+
+}
+.dilemma-submit-button{
+    float: right;
+    margin-right: 1vw;
+}
+.dilemma-input-text-field{
+    width: 80%;
+    height: 8vw;
+    margin: 1vw;
+}
+.create-dilemma-form{
+    margin: 1vw;
+}
+#enDescription{
+    line-height: 1vw;
+    width: 50%;
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
+    margin: 1vw;
+}
+#daDescription{
+    line-height: 1vw;
+    width: 50%;
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
+    margin: 1vw;
+}
+.package-dilemma{
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+.package-checkbox{
+    margin-left: 3px;
+}
+#delete-package-div{
+    margin-top: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+    position: sticky;
+    
+}

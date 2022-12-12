@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../css/adminpage/admin-style.css" />
+  <!-- jquery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- local scripts -->
+  <script src="../js/utility/api.js"></script>
+  <script src="../js/admin/admin-data.js"></script>
+  <script src="../js/admin/admin-general.js"></script>
+  <script src="../js/admin/admin-game-packages.js"></script>
+  
+</head>
+<body onload="loadData(); loadPackages(); renderDilemmas();">
+
+<!-- Menu -->    
+<div class="menu-box h-100 position-fixed">
+  <ul class="list-group">
+    <li class="list-group-item">
+      <button class="menu-button" onclick="renderDilemmas()">Dilemmaer</button>
+    </li>
+    <li class="list-group-item">
+      <button class="menu-button" onclick="renderPackages()">Pakker</button>
+    </li>
+    <li class="list-group-item">
+      <button class="menu-button" onclick="renderStatistics()">Statistik</button>
+    </li>
+    <li class="list-group-item">
+      <button class="menu-button" onclick="renderFeedback()">Feedback</button>
+    </li>
+    <li class="list-group-item">
+      <button class="menu-button" onclick="backToIndex()">Log-ud</button></a>
+    </li>
+  </ul>
+</div>
+<!-- header -->
+<div class="main-header">
+<h2 >Admin side</h2>
+<h6>(Ida og Martins side)</h5>
+</div>
+<!-- main box -->
+<div class="main-box">
+
+<!-- Base content box 
+
+<div class="content-box" id="content-page">
+  <h2 id="content-header">Content</h2>
+
+  <div class="content-buttons-div m-0">
+    <ul class="m-0">      
+        <button class="content-button" onclick="render()">Dilemmaer</button>
+      
+        <button class="content-button" onclick="render()">emne</button>
+      
+        <button class="content-button" onclick="render()">emne</button>
+      
+        <button class="content-button" onclick="render()">emne</button>
+      </ul>
+  </div>
+
+  <div class="content-info" id="content-info">
+    
+    tekstasdads
+
+
+  </div>
+</div>
+
+end base content box -->
+
+<!-- Dilemma -->
+<div class="content-box" id="dilemma-page">
+  <h2 id="content-header">Dilemmaer</h2>
+
+  <div class="content-buttons-div m-0">
+    <ul class="m-0">      
+        <button class="content-button" onclick="renderDilemmaList()">Dilemmaer</button>
+      
+        <button class="content-button" onclick="addNewDilemma()">Opret nyt dilemma</button>      
+        
+      </ul>
+  </div>
+
+  <div class="content-info" id="dilemma-info">  </div> 
+  
+</div>
+
+<!-- Package -->
+<div class="content-box" id="package-page">
+  <h2 id="content-header">Pakker</h2>
+
+  <div class="content-buttons-div m-0">
+    <ul class="m-0">      
+        <button class="content-button" onclick="renderPackageList()">Spil pakker</button>
+      
+        <button class="content-button" onclick="createNewPackage()">Opret ny pakke</button>
+              
+      </ul>
+  </div>
+
+  <div class="content-info" id="package-info">     </div>
+
+</div>
+
+<!-- Statistics -->
+<div class="content-box" id="statistics-page">
+  <h2 id="content-header">Statistik</h2>
+
+  <div class="content-buttons-div m-0">
+    <ul class="m-0">      
+        <button class="content-button" onclick="render()">Statistik</button>
+      
+        <button class="content-button" onclick="render()">emne</button>
+      
+        <button class="content-button" onclick="render()">emne</button>
+      
+        <button class="content-button" onclick="render()">emne</button>
+      </ul>
+  </div>
+
+  <div class="content-info" id="statistics-info">
+    
+    tekstasdads
+
+
+  </div>
+</div>
+
+<!-- Feedback -->
+<div class="content-box" id="feedback-page">
+  <h2 id="content-header">Feedback</h2>
+
+  <div class="content-buttons-div m-0">
+    <ul class="m-0">      
+        <button class="content-button" onclick="render()">Feedback</button>
+      
+        <button class="content-button" onclick="render()">emne</button>
+      
+        <button class="content-button" onclick="render()">emne</button>
+      
+        <button class="content-button" onclick="render()">emne</button>
+      </ul>
+  </div>
+
+  <div class="content-info" id="feedback-info">
+    
+    tekstasdads
+
+
+  </div>
+</div>
+
+<!-- end main box -->
+</div>
+
+
+
+</body>
+
+
+
+</html>

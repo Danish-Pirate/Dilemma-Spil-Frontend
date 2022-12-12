@@ -1,0 +1,155 @@
+:root {
+    --yellow: #eeb71f;
+}
+
+.w-33 {
+    width: 33%;
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+#game-info-div {
+    width: auto;
+    height: 30vw;
+}
+
+#feedback-div{
+    width: 60vw;
+    height: 30vw;
+
+}
+
+#game-info-div .game-desc {
+    border-radius: 25px;
+    background-color: var(--yellow);
+    height: 100%;
+}
+
+.game-info-button {
+    border-top-left-radius: 5px 5px;
+    border-top-right-radius: 5px 5px;
+    background-color: white;
+    border: 0;
+    padding: 0.5em;
+}
+
+.game-info-button:hover {
+    background-color: rgb(235, 37, 37);
+}
+
+#game-rules {
+    display: none;
+}
+
+.language-div {
+    margin-top: 1px;
+    margin-right: 1px;
+    background-color: var(--yellow);
+    padding: 0.25em;
+
+}
+
+.flag-icon {
+    height: 2em;
+}
+/* CSS copied from https://www.w3schools.com/howto/howto_css_switch.asp */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+.dilemma-height{
+    height: 400px;
+
+}
+
+.giant-box{
+
+    margin: 0px;
+    column-count: 2;
+}
+
+.menu-box{
+    width: 20%;
+}
+
+.main-box-container{
+    margin-top: 6%;
+    margin-left: 22%;
+    width: 80%;
+    column-count: 2;
+}
+
+
+/* Bootstrap slider colors  */
+input[type=range]::-webkit-slider-thumb {
+    background: black;
+}
+input[type=range]::-moz-range-thumb {
+    background: black;
+}
+input[type=range]::-ms-thumb {
+    background: black;
+}
+/* Bootstrap slider colors  */
