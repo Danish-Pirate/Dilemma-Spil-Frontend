@@ -10,7 +10,6 @@ class GameUI {
     }
 
     displayEnd() {
-        alert(1)
         showPage('end-page:link')
     }
 
